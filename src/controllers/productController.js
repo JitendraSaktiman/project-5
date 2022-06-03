@@ -143,7 +143,7 @@ const productByQuery = async function(req, res) {
 
              
             //$addtoset
-            let array = availableSizes.split(",").map(x => x.trim())
+            let array = size.split(",").map(x => x.trim())
             // console.log(array)
         for (let i = 0; i < array.length; i++) {
             if (!(["S", "XS", "M", "X", "L", "XXL", "XL"].includes(array[i]))) {
